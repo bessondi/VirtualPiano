@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+body {
+  background-color: indigo;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+h1,
+.description {
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.piano {
+  margin: 70px auto 0;
+  position: relative;
+}
+
+.white-keys,
+.black-keys {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.black-keys {
+  position: relative;
+  bottom: 216px;
+}
+
+.key {
+  display: inline-block;
+  border: 3px solid gray;
+  text-align: center;
+  vertical-align: text-bottom;
+  margin: 0 1px;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  transition: .15s;
+}
+
+.blackKey:nth-child(-n+2) {
+  right: 45px;
+}
+.blackKey:nth-last-child(-n+3) {
+  left: 45px;
+}
+
+.blackKey {
+  position: relative;
+  background-color: black;
+  width: 40px;
+  height: 55px;
+  margin: 0 20px;
+  padding-top: 85px;
+  color: white;
+}
+
+.whiteKey {
+  width: 80px;
+  height: 50px;
+  padding-top: 160px;
+  background-color: white;
+}
+
+.keyActive {
+  background-color: orange;
+  transition: .15s;
+}
